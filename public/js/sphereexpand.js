@@ -14,3 +14,7 @@ AFRAME.registerComponent('sphereexpand', {
       this.el.addEventListener('click', sphereloader);
         
    }});
+
+
+
+

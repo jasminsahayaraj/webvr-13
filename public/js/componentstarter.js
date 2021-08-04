@@ -5,3 +5,4 @@ AFRAME.registerComponent('disappear', {       
   }  
 
 });
+
