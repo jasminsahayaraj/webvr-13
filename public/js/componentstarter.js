@@ -1,7 +1,8 @@
-AFRAME.registerComponent('disappear', {       
+AFRAME.registerComponent('componentstarter', {       
   
   init: function () {      
   
   }  
 
 });
+

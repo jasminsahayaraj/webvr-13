@@ -2,10 +2,14 @@
   
   <head>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"> </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
-    <script src="public/js/sphereexpand.js"></script>
+   <script src="public/js/sphereexpand.js"></script>
     <script src="public/js/backhome.js"></script>
     <script src="public/js/examplefunctions.js"></script>
+     <script src="public/js/disappear.js"></script>
+   
+    
   </head>
   
   <body>
@@ -16,19 +20,19 @@
           <img id="woodfloor" src="https://cdn.glitch.com/c388f728-37b7-4af9-af03-1ee7430663e7%2F4727356277_66fb5f938f_o.jpg?1544178281422" crossorigin="anonymous">
          <img id="wall" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2F4340689010_68c3b1bbb7_o%20(2).jpg?1547154870021" crossorigin="anonymous">
          <img id="starsky" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Fstarry%20night.jpg?1547158907338" crossorigin="anonymous">
+       
          <img id="360 photo 2" src="https://cdn.glitch.com/f0fc75e2-bbbc-4160-b501-772ccc42b640%2F360%20photo%202.JPG?v=1618535433780" crossorigin="anonymous">
-        
        </a-assets>
              
-      <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
+      <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls="acceleration:200">>
         <a-entity cursor="rayOrigin: mouse"></a-entity>
       </a-entity>
       
       <a-entity laser-controls="hand:right"></a-entity>
-
-
-      <a-sky id="sky" src="#starsky"></a-sky>
        
+      <a-sky id="sky" src="#starsky"></a-sky>
+      
+               
       <a-entity id="architecture" class="homeworld">
          <a-plane id="floor" rotation="-90 90 0" width="30" height="30" src="#woodfloor" repeat="4 4"></a-plane>
          <a-plane position="0 5 -15" width="30" height="10" src="#wall" repeat="2 1"></a-plane>
@@ -41,34 +45,46 @@
        </a-entity>
        
   
+      
+       
        <a-entity id="picassodisplay" class="homeworld" position="0 3 -14.9">
-         <a-plane id="picassoframe" color="#191817" width="3" height="4"></a-plane>
-         <a-plane id="picassopainting" src="#picasso" position="0 0 .1" width="2.5" height="3.5" ></a-plane>
+         <a-plane id="picassoframe" color="#191817" width="5" height="5"></a-plane>
+         <a-plane id="picass opainting" src="#picasso" position="0 0 .1" width="2.5" height="3.5" ></a-plane>
          <a-plane id="picassocaption" position="3.5 -1 .01" height=".6" width="auto" color="#191817"
-          text="value: Pablo Picasso: Woman With a Mandolin. 1909; width: 3; align: center"></a-plane>
+       text="value: Welcome to Hutt Valley High School Virtual Tour; width: 5; align: center"></a-plane>
        </a-entity>
        
+    
        
-       <a-entity id="skulldisplay" class="homeworld" position="11 0 -11">
-         <a-box  color="black" width=".5" height="2" depth="1"></a-box>
-         <a-gltf-model position="0 1.8 0" rotation="0 0 -10" src="#skullmodel" scale=".5 .5 .5"
-         animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
-         ></a-gltf-model>
-         <a-plane id="skullcaption" position="3.9 1 2" rotation="0 -90 0" height=".6" width="auto" color="#191817"
-          text="value: This 3D model of a Triceratops skull was made by Sketchfab artist MikeBG; width: 3; align: center"
-         ></a-plane>
-       </a-entity>
-       
-      <a-entity id="photospheredisplay" class="homeworld" position="-10 0 -12">
+       <a-entity id="photospheredisplay" class="homeworld" position="-10 0 -12">
           <a-box color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
-          <a-sphere position="0 1.8 0" radius=".7" src="#360 photo 2" sphereexpand         
+             <a-sphere position="0 1.8 0" radius=".7" src="#360 photo 2" sphereexpand         
+          animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" 
+          ></a-sphere> 
+          <a-plane id="photospherecaption" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
+         text="value: This photosphere was taken infront of HVHS by using 360 camera; width: 2; wrapCount: 30; align: center"
+          ></a-plane>
+        <a-text="Our Values" position="-2.15 2 -2.29" rotation="0 10 0" width="4" color="black"></a-text>
+           </a-entity>
+    
+       
+     
+      
+       <a-entity id="photospheredisplay" class="homeworld" position="-6 0 -12">
+        <a-box color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
+         <a-sphere position="0 1.8 0" radius=".7" src="#HVHS Library" sphereexpand         
           animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
           ></a-sphere>
           <a-plane id="photospherecaption" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
-          text="value: This photosphere was taken infront of HVHS by using 360 camera; width: 2; wrapCount: 30; align: center"
+          text="value: Photosphere of the HVHS Library; width: 2; wrapCount: 30; align: center"
           ></a-plane>
+        
+        
+    
+       
        </a-entity>
        
+     
        <a-circle id="homebutton" position="0 .1 0" rotation="-90 0 0" backhome></a-circle>
       
      </a-scene>

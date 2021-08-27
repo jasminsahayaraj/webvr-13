@@ -1,0 +1,47 @@
+<html> 
+  
+  <head>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"> </script>
+    <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
+    <script src="public/js/sphereexpand.js"></script>
+    <script src="public/js/backhome.js"></script>
+    <script src="public/js/examplefunctions.js"></script>
+    <link rel="stylesheet" href="js/photo-sphere-viewer.min.css">
+  
+  </head>
+  
+  <body>
+    
+     <a-scene >
+        <a-assets>
+       
+       <img id="HVHS Library" src="https://cdn.glitch.com/5e1ba027-3e1b-45db-a253-93815b405fb0%2FReading%20book%20in%20library.jpg?v=1629763562621" crossorigin="anonymous">
+          
+           </a-assets>
+       
+     
+          <a-entity id="photospheredisplay" class="homeworld" position="-10 0 -12">
+          <a-box color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
+          <a-sphere position="0 1.8 0" radius=".7" src="#360 photo 2" sphereexpand         
+          animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
+          ></a-sphere>
+          <a-plane id="photospherecaption" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
+          text="value: This photosphere was taken infront of HVHS by using 360 camera; width: 2; wrapCount: 30; align: center"
+          ></a-plane>
+    </a-entity>
+        <a-circle id="homebutton" position="0 .1 0" rotation="-90 0 0" backhome></a-circle>
+          
+          </a-scene>
+    
+  </body>
+  
+</html>
+
+          
+          
+          
+          
+          
+          
+          
+          
