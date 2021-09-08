@@ -6,7 +6,7 @@ AFRAME.registerComponent('sphereexpand', {
       let sky = document.querySelector("#sky");
 
       let sphereloader = () => {
-      sky.setAttribute("src", "#360 photo 2");
+      sky.setAttribute("src", "#Entrance school 1");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", false)})
       }
@@ -23,7 +23,7 @@ AFRAME.registerComponent('sphereexpand', {
       let sky = document.querySelector("#sky");
 
       let sphereloader = () => {
-      sky.setAttribute("src", "#HVHS Library");
+      sky.setAttribute("src", "#Reading book in Library");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", false)})
       }
