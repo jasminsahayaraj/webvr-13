@@ -15,6 +15,8 @@ AFRAME.registerComponent('sphereexpand', {
         
    }});
 
+
+<!--photosphere-->
 AFRAME.registerComponent('sphereexpand', {
     
    init: function () {
