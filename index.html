@@ -1,65 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title> 360deg; Image</title>
-    <meta name="viewport" content="360deg; Image - A-frame">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="assets/js/aframe-master.js"></script>
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <meta charset="utf-8" />
+    <title>360&deg; Images</title>
+    <meta name="description" content="360&deg; Image - A-Frame">
+     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
-    <script src="public/js/sphereexpand.js"></script>
+  <script src="public/js/sphereexpand.js"></script>
     <script src="public/js/backhome.js"></script>
     <script src="public/js/examplefunctions.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="style.css" />
   </head>
-  
   <body>
-    
-     <a-scene >
-       
-       <a-assets>
-          <img id="woodfloor" src="https://cdn.glitch.com/c388f728-37b7-4af9-af03-1ee7430663e7%2F4727356277_66fb5f938f_o.jpg?1544178281422" crossorigin="anonymous">
-         <img id="wall" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2F4340689010_68c3b1bbb7_o%20(2).jpg?1547154870021" crossorigin="anonymous">
-         <img id="starsky" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Fstarry%20night.jpg?1547158907338" crossorigin="anonymous">
-       <img id="Entrance school 1" src="https://cdn.glitch.com/5e1ba027-3e1b-45db-a253-93815b405fb0%2Fentrance%20school%201.jpg?v=1630282146576" crossorigin="anonymous">
-       <img id="Reading book in library" src="https://cdn.glitch.com/5e1ba027-3e1b-45db-a253-93815b405fb0%2FReading%20book%20in%20library.jpg?v=1629763562621" crossorigin="anonymous">
-        <img id="School Map" src="https://cdn.glitch.com/5e1ba027-3e1b-45db-a253-93815b405fb0%2FSchool%20Map.jpg?v=1629935159851" >
-         <img id="HVHS Logo" src="https://cdn.glitch.com/f860d79a-b51d-4098-afdc-b8e663941552%2Fhvhs%20logo.jpg?v=1593492265340">
-       </a-assets>
-          
-       
-       <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls="acceleration:200">
-        <a-entity cursor="rayOrigin: mouse"></a-entity>
-      </a-entity>
-      
-      <a-entity laser-controls="hand:right"></a-entity>
-       
-       <a-sky id="sky" src="#starsky"></a-sky>
-      
-           
-               
-      <a-entity id="architecture" class="homeworld">
-         <a-plane id="floor" rotation="-90 90 0" width="30" height="30" src="#woodfloor" repeat="4 4"></a-plane>
-         <a-plane position="0 5 -15" width="30" height="10" src="#wall" repeat="2 1"></a-plane>
-         <a-plane position="-2.5 5 15" rotation="0 180 0" width="25" height="10" src="#wall" repeat="2 1"></a-plane>
-         <a-plane position="-15 5 0" rotation="0 90 0" width="30" height="10" src="#wall" repeat="2 1"></a-plane>
-         <a-plane position="15 5 0" rotation="0 -90 0" width="30" height="10" src="#wall" repeat="2 1"></a-plane>
-         <a-plane id = "ceiling" position="0 10 0" scale="1 1 1" width="30" height="30" rotation="90 0 0"
-           material="metalness:1; roughness:0; transparent: true; opacity: .7; shader: standard; 
-           color: #faaf52;+ side:double;"   ></a-plane>
-        
-      </a-entity>
+    <a-scene>
+      <a-sky src="https://cdn.glitch.com/5e1ba027-3e1b-45db-a253-93815b405fb0%2Fentrance%20school%201.jpg?v=1630282146576" rotation="0 -130 0"></a-sky>
    
-    </a-entity>
-  
-     <!--Information-->    
-<a-text value="Welcome to Hutt Valley High School Virtual Tour" position="-2.15 2 -2.29" rotation="0 10 0" width="4" color="black" color="black"
+     
+      <a-text value="Welcome to Hutt Valley High School Virtual Tour" position="-0.20 2 -1.29" rotation="10 0 10 0" width="3" color="blue"
         ></a-text>
   
-   
-        <!-- Information -->
-    <a-plane position="-3.30 4 -4.28" rotation="0 10 0" scale="2.75 2 1" color="White"></a-plane>    
-<a-text value="Our Values
+      
+      <a-plane  position="3.30 3 4.28" rotation="0 10 0" scale="2.75 2 1" color="White"></a-plane>    
+<a-text  value="Our Values:
                      1.We Achieve
                      2.We Preserve
                      3.We are Kind
@@ -68,69 +31,26 @@
              Link to HVHS website:
                https://www.hvhs.school.nz/" 
         
-        position="-2.20 3 -2.20" rotation="0 10 0" width="2" color="black"></a-text>
+         position="2.20 2.4 2.20" rotation="0 10 0" width="2" color="black"></a-text>
 </a-text> 
-
-
-           
-<!--360 photo-->
-       <a-entity id="photospheredispaly" class="homeworld" position="-15 0 -12">
-          <a-box color="white" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
-             <a-sphere position="0 1.8 0" radius=".7" src="#Entrance school 1" sphereexpand         
-          animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" 
-          ></a-sphere> 
-          <a-plane id="photospherecaption" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
-         text="value: This photosphere was taken infront of HVHS by using 360 camera; width: 2; wrapCount: 30; align: center"
-                   <a-plane>
-                     <a-image src="#School Map" width="3" height="2.5"></a-image>              
-</a-entity>
     
-      
-       <!--photosphere-->
-        <a-entity id="photospheredisplay" class="homeworld" position="-6 0 -12">
-          <a-box color="pink" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
-          <a-sphere position="0 1.8 0" radius=".7" src="#Reading book in library" sphereexpand          
-          animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
-          ></a-sphere>
-          <a-plane id="photospherecaption" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
-          text="value: Photosphere of the HVHS Library; width: 2; wrapCount: 30; align: center"
-          ></a-plane>
-       </a-entity>
-       
-    
-       <a-circle id="homebutton" position="0 .1 0" rotation="-90 0 0" backhome></a-circle> 
-<a-circle id="School infront" position="0 .1 0" rotation="-90 0 0" backhome></a-circle>
-      
-     </a-scene>
-    
-  </body>
+    <a-image src="https://cdn.glitch.com/5e1ba027-3e1b-45db-a253-93815b405fb0%2FSchool%20Map.jpg?v=1629935159851" width="1" height="1.5" position="3.30 4 4.28" rotation="0 10 0" scale="2.75 2 1"></a-image>
   
+     
+     <a-circle id="homebutton" position="0 .1 0" rotation="-90 0 0" backhome></a-circle> 
+  
+  </a-scene>
+  
+ 
+  
+  </body>
 </html>
 
-
- 
-
-
-  
-    <a-plane position="-3.50 4 -4.29" rotation="0 10 0" scale="1.75 1 1" color="#faaf52"></a-plane>    
-<a-text value="Our Values
-                     1.We Achieve
-                     2.We Preserve
-                     3.We are Kind
-                     4.We are Welcoming" position="-5.20 4 -5.29" rotation="0 10 0" width="4" color="black"></a-text>
+                                  
 
 
-       
- position="-4.50 3.8 -4.70" rotation="0 10 0" width="2.5" color="black "></a-text>
-   <a-plane position="-2.50 2 -1.29" rotation="0 10 0" scale="1.75 1 1" color="#faaf52"></a-plane>    
-<a-text value="Welcome to Hutt Valley High School Virtual Tour"></a-text>
-                                                                      
-                                                                      
-                  <a-entity id="distext" position="-4.50 4 -5.29" rotation="0 10 0" scale="2.75 2 1" color="#faaf52"                    
-                                                                    
-                                                                      
-                                                                      
-                                    <a-text value="Welcome to Hutt Valley High School Virtual Tour"  position="-5.15 2 -2.29" rotation="0 10 0" width="4" color="black"                                  
-                                                                      
-                                               <!--img-->  
-       <a-image src="#School Map" width="3" height="2.5"></a-image>                                   
+
+
+
+
+
