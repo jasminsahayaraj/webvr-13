@@ -1,20 +1,19 @@
-AFRAME.registerComponent('backhome', {
+   AFRAME.registerComponent('nextpage', {
  
     
    init: function () {
      
       let homeworldelements = document.querySelectorAll(".homeworld");
       let sky = document.querySelector("#sky");
-      let videosphere = document.querySelector("#videosphereentity");
-
       
-      let gobackhome = () => {
+      let gonextpage = () => {
       sky.setAttribute("src", "#starsky");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", true)})
     }
 
-      this.el.addEventListener('click', gobackhome);
+      this.el.addEventListener('click', gonextpage);
         
    }});
-  
+
+
