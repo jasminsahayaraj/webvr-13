@@ -4,10 +4,10 @@
    init: function () {
      
       let homeworldelements = document.querySelectorAll(".homeworld");
-      let sky = document.querySelector("#sky");
+      let sky = document.querySelector("#HVHS Library");
       
       let gonextpage = () => {
-      sky.setAttribute("src", "#starsky");
+      sky.setAttribute("src", "# HVHS Library");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", true)})
     }
