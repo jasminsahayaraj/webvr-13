@@ -15,3 +15,22 @@ AFRAME.registerComponent('sphereexpand', {
       this.el.addEventListener('click', sphereloader);
         
    }});
+
+
+<!--photosphere-->
+AFRAME.registerComponent('sphereexpand', {
+    
+   init: function () {
+
+      let homeworldelements = document.querySelectorAll(".homeworld");
+      let sky = document.querySelector("#sky");
+
+      let sphereloader = () => {
+      sky.setAttribute("src", "#HVHS G block");
+      homeworldelements.forEach((homeworldelement) => {
+      homeworldelement.setAttribute("visible", false)})
+      }
+
+      this.el.addEventListener('click', sphereloader);
+        
+   }});

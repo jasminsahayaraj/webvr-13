@@ -2,17 +2,21 @@
 <html>
   <head>
     <title>HVHS Library</title>
-    <meta name="description" content="360&deg; Image - A-Frame">
+    <meta name="description" content="360 deg Images">
      <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
-  <script src="public/js/sphereexpand.js"></script>
-    <script src="public/js/examplefunctions.js"></script>
-     <script src="public/js/nextpage.js"></script>
-    
 
+  
   </head>
   <body>
     <a-scene>
+      
+      
+      <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
+        <a-entity cursor="rayOrigin: mouse"></a-entity>
+      </a-entity>
+      
+      <a-entity laser-controls="hand:right"></a-entity>
      
       <a-sky src="https://cdn.glitch.com/5e1ba027-3e1b-45db-a253-93815b405fb0%2FReading%20book%20in%20library.jpg?v=1629763562621" rotation="0 -130 0"></a-sky>
    
@@ -23,7 +27,7 @@
                 
                 8am- 4pm" 
               
-        position="-2.60 1.5 -1.60" rotation="0 10 0" Scale="2 1.5 1" width="3"  color="red"></a-text>
+        font="aileronsemibold" position="-2.60 1.5 -1.60" rotation="0 10 0" Scale="2 1.5 1" width="3"  color="red"></a-text>
   
       
          
@@ -35,7 +39,9 @@
       
     <a-image src="https://cdn.glitch.com/5e1ba027-3e1b-45db-a253-93815b405fb0%2FLibrary%20Staffs.jpg?v=1633152171570" width="1.5" height="2" rotation="0 10 0" position="3.30 3 4.28" scale="-2.75 2 1"></a-image>
     
-   <a-link href="HVHS G block.html" tilte="Secondpage" position="0 .1 0" rotation="-90 0 0"></a-link>
+   
+      
+      <a-link href="HVHS Gblock.html" title="HVHS Library" position="0 .1 0" rotation="-90 0 0"></a-link>
   
   </a-scene>
   

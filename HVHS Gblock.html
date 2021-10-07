@@ -2,43 +2,30 @@
 <html>
   <head>
     <title>HVHS Gblock</title>
-    <meta name="description" content="360&deg; Image - A-Frame">
+  <meta name="description" content="360 deg Images">
      <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
-  <script src="public/js/sphereexpand.js"></script>
-    <script src="public/js/examplefunctions.js"></script>
-     <script src="public/js/nextpage.js"></script>
+ 
     
-
   </head>
   <body>
     <a-scene>
-      <a-sky src="" rotation="0 -130 0"></a-sky>
-   
-     
-      <a-text value="HVHS Libaray opening timing:
-                      
-                Monday - Friday
-                
-                8am- 4pm" 
-              
-              position="-0.20 1.5 -0.29" rotation="10 0 10 0" width="4" color="black" ></a-text>
+      
+      
+      <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
+        <a-entity cursor="rayOrigin: mouse"></a-entity>
+      </a-entity>
+      
+      <a-entity laser-controls="hand:right"></a-entity>
+      
+      <a-sky src="https://cdn.glitch.me/f0fc75e2-bbbc-4160-b501-772ccc42b640%2FGblockinside1.jpg?v=1633500921281" rotation="0 -130 0"></a-sky>
   
       
-       <a-plane position="-2.80 2.5 -2.10" rotation="0 10 0" scale="-2.75 1.5 1" width="1.6" color="White"></a-plane>    
-<a-text  value="HVHS has a first-class library located in the heart of the school.  
-                     
-                The Library runs and manages a range of learning and research initiatives complementary to classwork that the students are engaged with."
-        
-   font="kelsonsans" position="-3.60 2.5 -1.60" rotation="0 10 0" width="3"  color="red"></a-text>
-     
-        
-
-      
-    <a-image src="" width="1" height="1.5" position="3.30 3 4.28" rotation="0 10 0" scale="2.75 2 1"></a-image>
+       
+    <a-image src="https://cdn.glitch.me/f0fc75e2-bbbc-4160-b501-772ccc42b640%2FArt%20picture.jpg?v=1633501427535" width="1" height="1.5" position="3.30 3 4.28" rotation="0 10 0" scale="2.75 2 1"></a-image>
   
     
-   <a-link href="HVHs Gblock.html" tilte="" position="0 .1 0" rotation="-90 0 0"></a-link>
+   <a-link href="" tilte="" position="0 .1 0" rotation="-90 0 0"></a-link>
   
   </a-scene>
   
@@ -46,3 +33,11 @@
   
   </body>
 </html>
+
+
+ <a-plane position="-2.80 2.5 -2.10" rotation="0 10 0" scale="-2.75 1.5 1" width="1.6" color="White"></a-plane>    
+<a-text  value="HVHS has a first-class library located in the heart of the school.  
+                     
+                The Library runs and manages a range of learning and research initiatives complementary to classwork that the students are engaged with."
+        
+   font="kelsonsans" position="-3.60 2.5 -1.60" rotation="0 10 0" width="3"  color="red"></a-text>
