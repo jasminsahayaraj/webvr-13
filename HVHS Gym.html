@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <meta name="description" content="360 deg Images">
+     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+   
+  </head>
+  <body>
+    
+   <a-scene>
+     
+      <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
+        <a-entity cursor="rayOrigin: mouse"></a-entity>
+      </a-entity>
+      
+      <a-entity laser-controls="hand:right"></a-entity>
+    
+   
+   <a-sky src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2FHVHS%20gym.jpg?v=1636491347989" rotation="0 -130 0"></a-sky>
+
+ <a-text value="Welcome to HVHS Gym" font="mozillavr" position="-0.20 2 -1.29" rotation="10 1 5 0" width="3.5" color="white"
+        ></a-text>
+    
+     <a-link href="index.html" title="Homepage" position="2 0 -4.29" rotation="10 1 5 0" ></a-link>
+  
+  </a-scene>
+  
+  </body>
+</html>
