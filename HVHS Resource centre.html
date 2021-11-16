@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
   <head>
-    <title>HVHS Resource centre</title>
-  <meta name="description" content="360 deg Images">
+    <title>HVHS REspurce centre</title>
+    <meta name="description" content="360 deg Images">
      <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
   </head>
   <body>
     <a-scene>
+   
+      <!-- photosphere -->
+       <a-sky src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2Funiform.jpg?v=1634677590650" rotation="0 -130 0"></a-sky>
+  
+      <!-- text-->
+     <a-text value="Welcome to HVHS Resouce centre" font="mozillavr" position="-0.45 2 -2" rotation="10 1 5 0" width="3" color="white"
+        ></a-text>
       
-      
+      <!-- text -->
+      <a-plane position="-1.95 1.5 -2.10" rotation="0 10 0" scale="-2.75 1.5 1" width="1" color="White"></a-plane>    
+<a-text  value="Opening timing for resource centre:
+                
+                Monday - Friday
+                9.00 am - 2.00 pm exept on Thursday, on THURSDAY 10.30 am - 4.00 pm
+                
+                Buy staionery things, text books, all payments of any fees paid here, ticket for any school event, sport and school uniform etc..  "
+   font="mozillavr" position="-2.70 1.5 -1.60" rotation="0 10 0" width="2.3"  color="black"></a-text>
+     
+<!-- image -->
+  <a-image src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2FSchool%20Uniform%202.png?v=1634771104537"  width="1.8" height="2" rotation="-10 -20 -10" position="6.20 1.5 -5.10" scale="1.75 2 1"></a-image>
+  
+<!-- navigation -->
       <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
         <a-entity cursor="rayOrigin: mouse"></a-entity>
       </a-entity>
       
       <a-entity laser-controls="hand:right"></a-entity>
       
-       <a-sky src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2Funiform.jpg?v=1634677590650" rotation="0 -130 0"></a-sky>
-  
-     <a-text value="Welcome to HVHS Resouce centre" font="mozillavr" position="-0.20 2 -1.29" rotation="10 1 5 0" width="3.5" color="white"
-        ></a-text>
-      
-      <a-plane position="-2.80 2 -2.10" rotation="0 10 0" scale="-2.75 1.5 1" width="1.6" color="White"></a-plane>    
-<a-text  value="Opening timing for resource centre:
-                Monday - Friday
-                9.00 am - 2.00 pm exept on Thursday, on THURSDAY 10.30 am - 4.00 pm
-                
-                Buy staionery things, text books, all payments of any fees paid here, ticket for any school event, sport and school uniform etc..  "
-   font="mozillavr" position="-3.60 2 -1.60" rotation="0 10 0" width="3"  color="black"></a-text>
-     
-
-  <a-image src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2FSchool%20Uniform%202.png?v=1634771104537"  width="1.8" height="2" rotation="0 10 0" position="1.30 3 4.28" scale="-2.75 2 1"></a-image>
-  
-
-   <a-link href="HVHS Canteen.html" title="HVHS Canteen" position="2 0 -4.29" rotation="10 1 5 0" ></a-link>
+       <a-image src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2FRight%20Arrow.PNG?v=1636957929368"
+            width="1" position="2.50 0 -5.29" rotation="1 4 0" ></a-image>
+      <a-link href="HVHS Canteen.html" title=" HVHS Canteen" position="2.50 0 -5.29" rotation="1 4 0" ></a-link>
   
   </a-scene>
-  
- 
-  
+
   </body>
 </html>
    

@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
   <head>
     <title>HVHS G block</title>
-  <meta name="description" content="360 deg Images">
-     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script> 
-    <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
+    <meta name="description" content="360 deg Images">
+     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
+    
+      <!-- photosphere -->
+       <a-sky src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2FG%20class.jpg?v=1633663933148
+" rotation="0 -130 0"></a-sky>
+  
+      <!-- text -->
+    <a-text value="Welcome to G block" font="mozillavr" position="-0.75 2 -2" rotation="1 5 0" width="3" color="red" ></a-text>
+     
+      <!-- text -->
+      <a-plane position="-2.05 1.6 -2.10" rotation="0 10 0" scale="-2.75 1.5 1" width="0.8" height="0.8" color="White"></a-plane>    
+<a-text  value=" Art, Design and Visual Communication are offered at all levels in this block and students learn how to participate in, and celebrate their own and others’ visual worlds.
+                
+                English Language is also teaches here for student who came from overseas and learn English as their second language."
+  font="mozillavr"  position="-2.50 1.7 -1.60" rotation="0 10 0" width="1.7"  color="black"></a-text>
+     
+     <!-- images -->
+      <a-image src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2FEsol.jpg?v=1634250342803" width="1.9" height="1.5" rotation="-10 -20 -10" position="6.10 1.6 -5.10" scale="1.75 2 1"></a-image>
+    <a-image src="https://cdn.glitch.me/f0fc75e2-bbbc-4160-b501-772ccc42b640%2FArt%20picture.jpg?v=1633501427535" width="1" height="1.2" position="2.80 2 -5.10" rotation="-10 -20 -10" scale="1.75 2 1"></a-image>
       
-      
+      <!-- navigation -->
+    
       <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
         <a-entity cursor="rayOrigin: mouse"></a-entity>
       </a-entity>
       
       <a-entity laser-controls="hand:right"></a-entity>
-      
-       <a-sky src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2FG%20class.jpg?v=1633663933148
-" rotation="0 -130 0"></a-sky>
-  
-    <a-text value="Welcome to G block" font="mozillavr" position="-0.20 2 -1.29" rotation="10 1 1 0" width="3.5" color="red" ></a-text>
-     
-      
-      <a-plane position="-2.80 2 -2.10" rotation="0 10 0" scale="-2.75 1.5 1" width="1.6" color="White"></a-plane>    
-<a-text  value=" Art, Design and Visual Communication are offered at all levels in this block and students learn how to participate in, and celebrate their own and others’ visual worlds.
-                
-                English Language is also teaches here for student who came from overseas and learn English as their second language."
-  font="mozillavr"  position="-3.60 2 -1.60" rotation="0 10 0" width="3"  color="black"></a-text>
-     
-     
-      <a-image src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2FEsol.jpg?v=1634250342803" width="1.5" height="2" rotation="0 10 0" position="1.30 2.5 4.28" scale="-2.75 2 1"></a-image>
     
-       <a-image src="https://cdn.glitch.me/f0fc75e2-bbbc-4160-b501-772ccc42b640%2FArt%20picture.jpg?v=1633501427535" width="1" height="1.4" position="3.60 2.2 2.10" rotation="0 10 0" scale="-2.75 2 1"></a-image>
-      
-   <a-link href="HVHS Library.html" title="HVHS Library" position="2 0 -4.29" rotation="10 1 5 0" ></a-link>
+       <a-image src="https://cdn.glitch.me/5e1ba027-3e1b-45db-a253-93815b405fb0%2FRight%20Arrow.PNG?v=1636957929368"
+            width="1" position="1.70 0 -5.29" rotation="1 4 0" ></a-image>
+      <a-link href="HVHS Library.html" title="HVHS Library" position="1.70 0 -5.29" rotation="1 4 0" ></a-link>
   
   </a-scene>
-  
- 
   
   </body>
 </html>
